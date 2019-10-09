@@ -1,9 +1,848 @@
 html, body {
     margin: 0;
     padding: 0;
-}/*font-family: 'Roboto', sans-serif;
-nav - #505866
-footer - #484F5C
-line - #979797
-bg - #484F5C
+    font-family: "HelveticaNeueCyr";
+}
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+header {
+    width: 100%;
+    padding: 10px 0;
+    background: #505866;
+    border-bottom: 1px solid #3E4550;
+}
+.header__layout {
+    display: flex;
+    justify-content: space-between;
+}
+.header__layout-logo {
+    width: 40%;
+    margin: auto 0;
+}
+nav {
+    width: 60%;
+    font-size: 15px;
+}
+.header__layout-navigation {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+.header__layout-navigation-item-link {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 7px 21px;
+}
+.header__layout-navigation-item-link:hover {
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.15),inset 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    background: #454C57;
+    color: #9F9F9F;
+}
+/*first-screen*/
+.first-screen {
+    width: 100%;
+    border-top: 1px solid #505866;
+    background: #3E4550;
+    border-bottom: 1px solid #1E1F29;
+    padding-top: 70px;
+}
+.first-screen__layout {
+    display: flex;
+    justify-content: space-between;
+}
+.first-screen__layout-picture {
+    display: flex;
+    justify-content: start;
+    width: 50%;
+}
+.first-screen__layout-description {
+    width: 50%;
+}
+.first-screen__layout-picture-image {
+    padding-right: 25px;
+}
+.first-screen__layout-picture-image:nth-child(2n) {
+    padding: 0;
+}
+.first-screen__layout-description {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    padding: 20px 15px 20px 65px;
+}
+.first-screen__layout-description-title {
+    font-size: 48px;
+    font-family: 'Museo Sans Cyrl 500';
+    color: #ffffff;
+    margin: 0;
+    padding: 25px 0 10px 0;
+}
+.first-screen__layout-description-text--white {
+    color: #C1C1C1;
+    padding-bottom: 10px;
+    line-height: 1.5;
+}
+.first-screen__layout-description-text--grey {
+    color: #707070;
+    line-height: 1.5;
+    padding-bottom: 25px;
+}
+.first-screen__layout-description-link-covenant {
+    color: #ffffff;
+    padding: 0 10px;
+}
+.first-screen__layout-description-buttons-work {
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 2px;
+}
+.first-screen__layout-description-link-contact {
+    background: #81c824;
+    color: #353336;
+    text-decoration: none;
+    padding: 13px 28px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 1px outset #81c824;
+}
+.first-screen__layout-description-link-contact:hover {
+    background: #99EC28;
+}
+/*second-screen*/
+.second-screen {
+    width: 100%;
+    background: #555c6c;
+    border-top: 1px solid #979797;
+    border-bottom: 1px solid #31323E;
+}
+.second-screen__layout {
+    display: flex;
+    justify-content: space-between;
+}
+.second-screen__layout-item {
+    width: 80px;
+    height: 55px;
+    padding: 15px 0;
+}
+.second-screen__layout-item-image {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*
+.Content {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1200px;
+    height: 2289px;
+    z-index: 125;
+}
+.Logo_wall {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1200px;
+    height: 2289px;
+    z-index: 124;
+}
+.Dummy_logo {
+    background-color: rgba(26, 29, 34, 0.322);
+    box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.2),inset 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    left: 111px;
+    top: 606px;
+    width: 75px;
+    height: 43px;
+    z-index: 123;
+}
+.Dummy_logo {
+    background-color: rgba(26, 29, 34, 0.322);
+    box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.2),inset 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    left: 315px;
+    top: 608px;
+    width: 95px;
+    height: 41px;
+    z-index: 122;
+}
+.Dummy_logo {
+    background-color: rgba(26, 29, 34, 0.322);
+    box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.2),inset 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    left: 1010px;
+    top: 608px;
+    width: 78px;
+    height: 41px;
+    z-index: 121;
+}
+.Dummy_logo {
+    background-color: rgba(26, 29, 34, 0.322);
+    box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.2),inset 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    left: 576px;
+    top: 609px;
+    width: 45px;
+    height: 38px;
+    z-index: 120;
+}
+.Dummy_logo {
+    background-color: rgba(26, 29, 34, 0.322);
+    box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.2),inset 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    left: 780px;
+    top: 605px;
+    width: 65px;
+    height: 44px;
+    z-index: 119;
+}
+.underline {
+    background-color: rgb(52, 57, 66);
+    position: absolute;
+    left: 0px;
+    top: 665px;
+    width: 1200px;
+    height: 1px;
+    z-index: 118;
+}
+.bg {
+    background-image: -moz-linear-gradient( 90deg, rgb(60,60,72) 0%, rgb(255,255,255) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(60,60,72) 0%, rgb(255,255,255) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(60,60,72) 0%, rgb(255,255,255) 100%);
+    position: absolute;
+    left: 0px;
+    top: 594px;
+    width: 1200px;
+    height: 71px;
+    z-index: 117;
+}
+.Introduction {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1200px;
+    height: 2289px;
+    z-index: 115;
+}
+.Putin_img {
+    background-image: url("Putin img.png");
+    position: absolute;
+    left: 890px;
+    top: 771px;
+    width: 145px;
+    height: 205px;
+    z-index: 114;
+}
+.Testimonial {
+    font-size: 14px;
+    font-family: "MuseoSans";
+    color: rgb(51, 51, 51);
+    line-height: 1.429;
+    text-align: left;
+    position: absolute;
+    left: 467.937px;
+    top: 795.25px;
+    width: 453px;
+    height: 171px;
+    z-index: 113;
+}
+.Testimonial_title {
+    font-size: 19px;
+    font-family: "MuseoSans";
+    color: rgb(51, 51, 51);
+    line-height: 0.737;
+    text-align: left;
+    text-shadow: 0px 1px 3px rgba(255, 255, 255, 0.004);
+    position: absolute;
+    left: 464.844px;
+    top: 745.035px;
+    width: 251px;
+    height: 23px;
+    z-index: 112;
+}
+.separator_white {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 447px;
+    top: 711px;
+    width: 1px;
+    height: 265px;
+    z-index: 111;
+}
+.separator_black {
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    left: 446px;
+    top: 711px;
+    width: 1px;
+    height: 265px;
+    z-index: 110;
+}
+.Check_copy_3 {
+    background-color: rgb(51, 51, 51);
+    position: absolute;
+    left: 178px;
+    top: 865px;
+    width: 15px;
+    height: 15px;
+    z-index: 109;
+}
+.Check_copy_2 {
+    background-color: rgb(51, 51, 51);
+    position: absolute;
+    left: 178px;
+    top: 835px;
+    width: 15px;
+    height: 15px;
+    z-index: 108;
+}
+.Check_copy {
+    background-color: rgb(51, 51, 51);
+    position: absolute;
+    left: 178px;
+    top: 805px;
+    width: 15px;
+    height: 15px;
+    z-index: 107;
+}
+.Check {
+    background-color: rgb(51, 51, 51);
+    position: absolute;
+    left: 178px;
+    top: 776px;
+    width: 15px;
+    height: 15px;
+    z-index: 106;
+}
+.Underscore {
+    background-color: rgb(51, 51, 51);
+    position: absolute;
+    left: 199px;
+    top: 921px;
+    width: 118px;
+    height: 1px;
+    z-index: 105;
+}
+.Lorem_ipsum_dolor_sit_amet__Consectetur_adipisc {
+    font-size: 14px;
+    font-family: "MuseoSans";
+    color: rgb(51, 51, 51);
+    line-height: 1.357;
+    text-align: left;
+    position: absolute;
+    left: 199.134px;
+    top: 795.25px;
+    width: 234px;
+    height: 141px;
+    z-index: 104;
+}
+.Lorem_Ipsum_dolor_sit_amet {
+    font-size: 19px;
+    font-family: "MuseoSans";
+    color: rgb(51, 51, 51);
+    line-height: 0.737;
+    text-align: left;
+    text-shadow: 0px 1px 3px rgba(255, 255, 255, 0.004);
+    position: absolute;
+    left: 178.844px;
+    top: 743.035px;
+    width: 246px;
+    height: 23px;
+    z-index: 103;
+}
+.bg {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(201, 201, 201);
+    background-color: rgb(228, 228, 228);
+    position: absolute;
+    left: 162px;
+    top: 708px;
+    width: 874px;
+    height: 269px;
+    z-index: 102;
+}
+.Services {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1200px;
+    height: 2289px;
+    z-index: 100;
+}
+.Design {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1200px;
+    height: 2289px;
+    z-index: 99;
+}
+.Blue_CTA_button {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1200px;
+    height: 2289px;
+    z-index: 98;
+}
+.Read_more_copy_2 {
+    font-size: 14px;
+    font-family: "HelveticaNeue";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 2.571;
+    text-align: left;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    left: 906.937px;
+    top: 1319.003px;
+    z-index: 97;
+}
+.btn {
+    background-image: -moz-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(255,255,255) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(255,255,255) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(255,255,255) 100%);
+    box-shadow: inset 0px 2px 0px 0px rgba(255, 255, 255, 0.42);
+    position: absolute;
+    left: 866px;
+    top: 1314px;
+    width: 155px;
+    height: 46px;
+    z-index: 96;
+}
+.shadow {
+    background-image: url("shadow.png");
+    opacity: 0.502;
+    position: absolute;
+    left: 858px;
+    top: 1344px;
+    width: 174px;
+    height: 27px;
+    z-index: 95;
+}
+.Text {
+    font-size: 20px;
+    font-family: "MuseoSans";
+    color: rgb(75, 90, 101);
+    line-height: 1.3;
+    text-align: center;
+    position: absolute;
+    left: 792.562px;
+    top: 1227.107px;
+    width: 296px;
+    height: 83px;
+    z-index: 93;
+}
+.Icon {
+    background-image: url("Icon.png");
+    position: absolute;
+    left: 905px;
+    top: 1081px;
+    width: 63px;
+    height: 61px;
+    z-index: 92;
+}
+.Cirkel_3 {
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(80, 88, 102);
+    border-radius: 50%;
+    background-color: rgba(76, 91, 102, 0);
+    position: absolute;
+    left: 866px;
+    top: 1040px;
+    width: 135px;
+    height: 135px;
+    z-index: 91;
+}
+.Usability {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1200px;
+    height: 2289px;
+    z-index: 89;
+}
+.Blue_CTA_button {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1200px;
+    height: 2289px;
+    z-index: 88;
+}
+.Read_more_copy {
+    font-size: 14px;
+    font-family: "HelveticaNeue";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 2.571;
+    text-align: left;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    left: 568.937px;
+    top: 1319.003px;
+    z-index: 87;
+}
+.btn {
+    background-image: -moz-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(255,255,255) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(255,255,255) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(255,255,255) 100%);
+    box-shadow: inset 0px 2px 0px 0px rgba(255, 255, 255, 0.42);
+    position: absolute;
+    left: 528px;
+    top: 1314px;
+    width: 155px;
+    height: 46px;
+    z-index: 86;
+}
+.shadow {
+    background-image: url("shadow.png");
+    opacity: 0.502;
+    position: absolute;
+    left: 520px;
+    top: 1344px;
+    width: 174px;
+    height: 27px;
+    z-index: 85;
+}
+.text {
+    font-size: 20px;
+    font-family: "MuseoSans";
+    color: rgb(75, 90, 101);
+    line-height: 1.3;
+    text-align: center;
+    position: absolute;
+    left: 452.562px;
+    top: 1228.198px;
+    width: 296px;
+    height: 83px;
+    z-index: 83;
+}
+.icon {
+    background-color: rgb(80, 88, 102);
+    position: absolute;
+    left: 574px;
+    top: 1080px;
+    width: 53px;
+    height: 62px;
+    z-index: 82;
+}
+.Cirkel_2 {
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(80, 88, 102);
+    border-radius: 50%;
+    background-color: rgba(76, 91, 102, 0);
+    position: absolute;
+    left: 528px;
+    top: 1040px;
+    width: 135px;
+    height: 135px;
+    z-index: 81;
+}
+.Research {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1200px;
+    height: 2289px;
+    z-index: 79;
+}
+.Blue_CTA_button {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1200px;
+    height: 2289px;
+    z-index: 78;
+}
+.Read_more {
+    font-size: 14px;
+    font-family: "HelveticaNeue";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 2.571;
+    text-align: left;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    left: 227.937px;
+    top: 1319.003px;
+    z-index: 77;
+}
+.btn {
+    background-image: -moz-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(255,255,255) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(255,255,255) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(255,255,255) 100%);
+    box-shadow: inset 0px 2px 0px 0px rgba(255, 255, 255, 0.42);
+    position: absolute;
+    left: 187px;
+    top: 1314px;
+    width: 155px;
+    height: 46px;
+    z-index: 76;
+}
+.shadow {
+    background-image: url("shadow.png");
+    opacity: 0.502;
+    position: absolute;
+    left: 179px;
+    top: 1344px;
+    width: 174px;
+    height: 27px;
+    z-index: 75;
+}
+.text {
+    font-size: 20px;
+    font-family: "MuseoSans";
+    color: rgb(75, 90, 101);
+    line-height: 1.3;
+    text-align: center;
+    position: absolute;
+    left: 113.886px;
+    top: 1228.198px;
+    width: 295px;
+    height: 83px;
+    z-index: 73;
+}
+.icon {
+    background-color: rgb(80, 88, 102);
+    position: absolute;
+    left: 231px;
+    top: 1080px;
+    width: 63px;
+    height: 63px;
+    z-index: 72;
+}
+.Cirkel_1 {
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(80, 88, 102);
+    border-radius: 50%;
+    background-color: rgba(76, 91, 102, 0);
+    position: absolute;
+    left: 189px;
+    top: 1040px;
+    width: 135px;
+    height: 135px;
+    z-index: 71;
+}
+._3_Column_ {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1200px;
+    height: 2289px;
+    z-index: 68;
+}
+.bot_separator {
+    background-color: rgb(237, 237, 237);
+    position: absolute;
+    left: 97px;
+    top: 1702px;
+    width: 1003px;
+    height: 1px;
+    z-index: 67;
+}
+.top_separator {
+    background-color: rgb(237, 237, 237);
+    position: absolute;
+    left: 97px;
+    top: 1432px;
+    width: 1003px;
+    height: 1px;
+    z-index: 66;
+}
+._1 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1200px;
+    height: 2289px;
+    z-index: 65;
+}
+.Headline {
+    font-size: 19px;
+    font-family: "MuseoSans";
+    color: rgb(75, 90, 101);
+    line-height: 0.737;
+    text-align: left;
+    text-shadow: 0px 1px 3px rgba(255, 255, 255, 0.004);
+    position: absolute;
+    left: 127.844px;
+    top: 1515.035px;
+    width: 256px;
+    height: 23px;
+    z-index: 64;
+}
+.text {
+    font-size: 12px;
+    font-family: "MuseoSans";
+    color: rgb(108, 108, 108);
+    line-height: 1.333;
+    text-align: left;
+    position: absolute;
+    left: 127.937px;
+    top: 1550.992px;
+    width: 265px;
+    height: 108px;
+    z-index: 63;
+}
+._2 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1200px;
+    height: 2289px;
+    z-index: 61;
+}
+.Headline {
+    font-size: 19px;
+    font-family: "MuseoSans";
+    color: rgb(75, 90, 101);
+    line-height: 0.737;
+    text-align: left;
+    text-shadow: 0px 1px 3px rgba(255, 255, 255, 0.004);
+    position: absolute;
+    left: 465.11px;
+    top: 1515.035px;
+    width: 279px;
+    height: 23px;
+    z-index: 60;
+}
+.text {
+    font-size: 12px;
+    font-family: "MuseoSans";
+    color: rgb(108, 108, 108);
+    line-height: 1.333;
+    text-align: left;
+    position: absolute;
+    left: 465.937px;
+    top: 1550.992px;
+    width: 264px;
+    height: 108px;
+    z-index: 59;
+}
+._3 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1200px;
+    height: 2289px;
+    z-index: 57;
+}
+.Headline {
+    font-size: 19px;
+    font-family: "MuseoSans";
+    color: rgb(75, 90, 101);
+    line-height: 0.737;
+    text-align: left;
+    text-shadow: 0px 1px 3px rgba(255, 255, 255, 0.004);
+    position: absolute;
+    left: 803.89px;
+    top: 1514.035px;
+    width: 216px;
+    height: 20px;
+    z-index: 56;
+}
+.Text {
+    font-size: 12px;
+    font-family: "MuseoSans";
+    color: rgb(108, 108, 108);
+    line-height: 1.333;
+    text-align: left;
+    position: absolute;
+    left: 802.937px;
+    top: 1549.992px;
+    width: 253px;
+    height: 108px;
+    z-index: 55;
+}
+.Projects {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1200px;
+    height: 2289px;
+    z-index: 52;
+}
+.Header {
+    font-size: 19px;
+    font-family: "MuseoSans";
+    color: rgb(76, 91, 102);
+    line-height: 1.895;
+    text-align: left;
+    position: absolute;
+    left: 110.11px;
+    top: 1781.035px;
+    width: 152px;
+    height: 18px;
+    z-index: 51;
+}
+.Project_images {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1200px;
+    height: 2289px;
+    z-index: 50;
+}
+.Project_image_holder {
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(255, 255, 255);
+    background-color: rgb(64, 153, 211);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.45);
+    position: absolute;
+    left: 867px;
+    top: 1785px;
+    width: 216px;
+    height: 154px;
+    z-index: 48;
+}
+.Project_image_holder {
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(255, 255, 255);
+    background-color: rgb(64, 153, 211);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.45);
+    position: absolute;
+    left: 615px;
+    top: 1785px;
+    width: 216px;
+    height: 154px;
+    z-index: 46;
+}
+.Project_image_holder {
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(255, 255, 255);
+    background-color: rgb(64, 153, 211);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.45);
+    position: absolute;
+    left: 363px;
+    top: 1785px;
+    width: 216px;
+    height: 154px;
+    z-index: 44;
+}
+.Project_image_holder {
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(255, 255, 255);
+    background-color: rgb(64, 153, 211);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.45);
+    position: absolute;
+    left: 111px;
+    top: 1785px;
+    width: 216px;
+    height: 154px;
+    z-index: 42;
+}
 */
