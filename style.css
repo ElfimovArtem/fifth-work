@@ -352,18 +352,18 @@ nav {
 .sixth-screen__layout-slider-window-item {
     padding: 30px;
     position: relative;
+    outline: none;
 }
 .sixth-screen__layout-slider-window-item-link {
     outline: none;
-    z-index: 2;
 }
 .sixth-screen__layout-slider-window-item-content {
     display: none;
     position: absolute;
-    top: 40%;
-    left: 45%;
-    font-size: 45px;
-    z-index: 5;
+    top: 28px;
+    right: 35px;
+    font-size: 40px;
+    color: #18bf00;
 }
 .sixth-screen__layout-slider-window-item-link:hover + .sixth-screen__layout-slider-window-item-content {
     display: block;
