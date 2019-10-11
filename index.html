@@ -6,6 +6,9 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="./assets/font/stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/slick-1.8.1/slick/slick-theme.css" />
+    <script type="text/javascript" src="./slider.js"></script>
     <title>The-fifth-work</title>
 </head>
 <body>
@@ -13,7 +16,7 @@
         <div class="wrapper">
             <div class="header__layout">
                 <div class="header__layout-logo">
-                    <img class="header__layout-logo-image" src="./assets/logo.png" />
+                    <img class="header__layout-logo-image" src="./assets/images/Lg.png" alt="" />
                 </div>
                 <nav>
                     <ul class="header__layout-navigation">
@@ -44,8 +47,8 @@
         <div class="wrapper">
             <div class="first-screen__layout">
                 <div class="first-screen__layout-picture">
-                    <img class="first-screen__layout-picture-image" src="./assets/iPhone_1.png" />
-                    <img class="first-screen__layout-picture-image" src="./assets/iPhone_2.png" />
+                    <img class="first-screen__layout-picture-image" src="./assets/images/iPhone_1.png" alt="" />
+                    <img class="first-screen__layout-picture-image" src="./assets/images/iPhone_2.png" alt="" />
                 </div>
                 <div class="first-screen__layout-description">
                     <h1 class="first-screen__layout-description-title">We design fun</h1>
@@ -74,19 +77,19 @@
         <div class="wrapper">
             <div class="second-screen__layout">
                 <div class="second-screen__layout-item">
-                    <img class="second-screen__layout-item-image" src="./assets/ebay%20logo.png" />
+                    <img class="second-screen__layout-item-image" src="./assets/images/ebay%20logo.png" alt="" />
                 </div>
                 <div class="second-screen__layout-item">
-                    <img class="second-screen__layout-item-image" src="./assets/mac%20logo.png" />
+                    <img class="second-screen__layout-item-image" src="./assets/images/mac%20logo.png" alt="" />
                 </div>
                 <div class="second-screen__layout-item">
-                    <img class="second-screen__layout-item-image" src="./assets/addidas.png" />
+                    <img class="second-screen__layout-item-image" src="./assets/images/addidas.png" alt="" />
                 </div>
                 <div class="second-screen__layout-item">
-                    <img class="second-screen__layout-item-image" src="./assets/EA%20logo.png" />
+                    <img class="second-screen__layout-item-image" src="./assets/images/EA%20logo.png" alt="" />
                 </div>
                 <div class="second-screen__layout-item">
-                    <img class="second-screen__layout-item-image" src="./assets/Dummy%20logo.png" />
+                    <img class="second-screen__layout-item-image" src="./assets/images/Dummy%20logo.png" alt="" />
                 </div>
             </div>
         </div>
@@ -134,7 +137,11 @@
                     <span class="third-screen__layout-description-signature">Vladimir Putin</span>
                     <span class="third-screen__layout-description-profession">President, World savior</span>
                     <div class="third-screen__layout-description-photo">
-                      <img class="third-screen__layout-description-photo-image" src="./assets/Putin.png" />
+                      <img
+                        class="third-screen__layout-description-photo-image"
+                        src="./assets/images/Putin.png"
+                        alt=""
+                      />
                     </div>
                 </div>
             </div>
@@ -251,24 +258,58 @@
     <div class="sixth-screen">
         <div class="wrapper">
             <div class="sixth-screen__layout">
-                <h3 class="sixth-screen__layout-title">Selected projects</h3>
+                <h3 class="sixth-screen__layout-title">Selected <b>projects</b></h3>
                 <div class="sixth-screen__layout-slider">
-                    <!--<div class="sixth-screen__layout-slider-window">
+                    <div class="sixth-screen__layout-slider-window">
                         <div class="sixth-screen__layout-slider-window-item">
-                            <img class="sixth-screen__layout-slider-window-item-image" src="./assets/slide_1.png" />
+                            <a class="sixth-screen__layout-slider-window-item-link" href="#">
+                                <img
+                                    class="sixth-screen__layout-slider-window-item-link-image"
+                                    src="./assets/images/slide_1.png"
+                                    alt=""
+                                 />
+                            </a>
+                            <div class="sixth-screen__layout-slider-window-item-content">
+                                <i class="fa fa-check"></i>
+                            </div>
                         </div>
                         <div class="sixth-screen__layout-slider-window-item">
-                            <img class="sixth-screen__layout-slider-window-item-image" src="./assets/slide_2.png" />
+                            <a class="sixth-screen__layout-slider-window-item-link" href="#">
+                                <img
+                                  class="sixth-screen__layout-slider-window-item-link-image"
+                                  src="./assets/images/slide_2.png"
+                                  alt=""
+                                />
+                            </a>
+                            <div class="sixth-screen__layout-slider-window-item-content">
+                                <i class="fa fa-check"></i>
+                            </div>
                         </div>
                         <div class="sixth-screen__layout-slider-window-item">
-                            <img class="sixth-screen__layout-slider-window-item-image" src="./assets/slide_3.png" />
+                            <a class="sixth-screen__layout-slider-window-item-link" href="#">
+                                <img
+                                  class="sixth-screen__layout-slider-window-item-link-image"
+                                  src="./assets/images/slide_3.png"
+                                  alt=""
+                                />
+                            </a>
+                            <div class="sixth-screen__layout-slider-window-item-content">
+                                <i class="fa fa-check"></i>
+                            </div>
                         </div>
                         <div class="sixth-screen__layout-slider-window-item">
-                            <img class="sixth-screen__layout-slider-window-item-image" src="./assets/slide_4.png" />
+                            <a class="sixth-screen__layout-slider-window-item-link" href="#">
+                                <img
+                                  class="sixth-screen__layout-slider-window-item-link-image"
+                                  src="./assets/images/slide_4.png"
+                                  alt=""
+                                />
+                            </a>
+                            <div class="sixth-screen__layout-slider-window-item-content">
+                                <i class="fa fa-check"></i>
+                            </div>
                         </div>
                     </div>
-                    <a class="sixth-screen__layout-slider-prev" onclick="prevSlide()">&#10094;</a>
-                    <a class="sixth-screen__layout-slider-next" onclick="nextSlide()">&#10095;</a>-->
                 </div>
             </div>
         </div>
@@ -277,98 +318,134 @@
         <div class="wrapper">
             <div class="footer__layout">
                 <div class="footer__layout-navigation">
-                    <ul class="footer__layout-navigation-list">
-                        <li class="footer__layout-navigation-list-item">
-                            <a class="footer__layout-navigation-list-item-link" href="#">About</a>
-                        </li>
-                        <li class="footer__layout-navigation-list-item">
-                            <a class="footer__layout-navigation-list-item-link" href="#">Features</a>
-                        </li>
-                        <li class="footer__layout-navigation-list-item">
-                            <a class="footer__layout-navigation-list-item-link" href="#">Work</a>
-                        </li>
-                        <li class="footer__layout-navigation-list-item">
-                            <a class="footer__layout-navigation-list-item-link" href="#">Support</a>
-                        </li>
-                        <li class="footer__layout-navigation-list-item">
-                            <a class="footer__layout-navigation-list-item-link" href="#">Contact</a>
-                        </li>
-                    </ul>
-                    <div class="footer__layout-navigation-container">
-                        <ul class="footer__layout-navigation-container-list">
+                    <div class="footer__layout-navigation-block">
+                        <h4 class="footer__layout-navigation-block-title">
+                            <a class="footer__layout-navigation-block-title-link" href="#">About</a>
+                        </h4>
+                        <ul class="footer__layout-navigation-block-list">
                             <li>
-                                <a class="footer__layout-navigation-container-list-link" href="#">- Lorem</a>
+                                <a class="footer__layout-navigation-block-list-link" href="#">- Lorem</a>
                             </li>
                             <li>
-                                <a class="footer__layout-navigation-container-list-link" href="#">- Dolor sit</a>
-                                </li>
-                            <li>
-                                <a class="footer__layout-navigation-container-list-link" href="#">- Nullam</a>
+                                   <a class="footer__layout-navigation-block-list-link" href="#">- Dolor sit</a>
                             </li>
                             <li>
-                                <a class="footer__layout-navigation-container-list-link" href="#">- Integer eget</a>
+                                <a class="footer__layout-navigation-block-list-link" href="#">- Nullam</a>
+                            </li>
+                            <li>
+                                <a class="footer__layout-navigation-block-list-link" href="#">- Integer eget</a>
                             </li>
                         </ul>
-                        <ul class="footer__layout-navigation-container-list">
+                    </div>
+                    <div class="footer__layout-navigation-block">
+                        <h4 class="footer__layout-navigation-block-title">
+                            <a class="footer__layout-navigation-block-title-link" href="#">Features</a>
+                        </h4>
+                        <ul class="footer__layout-navigation-block-list">
                             <li>
-                                <a class="footer__layout-navigation-container-list-link" href="#">- Lorem</a>
+                                <a class="footer__layout-navigation-block-list-link" href="#">- Lorem</a>
                             </li>
                             <li>
-                                <a class="footer__layout-navigation-container-list-link" href="#">- Dolor sit</a>
+                                <a class="footer__layout-navigation-block-list-link" href="#">- Dolor sit</a>
                             </li>
                             <li>
-                                <a class="footer__layout-navigation-container-list-link" href="#">- Nullam</a>
+                                <a class="footer__layout-navigation-block-list-link" href="#">- Nullam</a>
                             </li>
                             <li>
-                                <a class="footer__layout-navigation-container-list-link" href="#">- Integer eget</a>
-                            </li>
-                        </ul>
-                        <ul class="footer__layout-navigation-container-list">
-                            <li>
-                                <a class="footer__layout-navigation-container-list-link" href="#">- Lorem</a>
-                            </li>
-                            <li>
-                                <a class="footer__layout-navigation-container-list-link" href="#">- Dolor sit</a>
-                            </li>
-                            <li>
-                                <a class="footer__layout-navigation-container-list-link" href="#">- Nullam</a>
-                            </li>
-                            <li>
-                                <a class="footer__layout-navigation-container-list-link" href="#">- Integer eget</a>
+                                <a class="footer__layout-navigation-block-list-link" href="#">- Integer eget</a>
                             </li>
                         </ul>
-                        <ul class="footer__layout-navigation-container-list">
+                    </div>
+                    <div class="footer__layout-navigation-block">
+                        <h4 class="footer__layout-navigation-block-title">
+                            <a class="footer__layout-navigation-block-title-link" href="#">Work</a>
+                        </h4>
+                        <ul class="footer__layout-navigation-block-list">
                             <li>
-                                <a class="footer__layout-navigation-container-list-link" href="#">- Lorem</a>
+                                <a class="footer__layout-navigation-block-list-link" href="#">- Lorem</a>
                             </li>
                             <li>
-                                <a class="footer__layout-navigation-container-list-link" href="#">- Dolor sit</a>
+                                <a class="footer__layout-navigation-block-list-link" href="#">- Dolor sit</a>
                             </li>
                             <li>
-                                <a class="footer__layout-navigation-container-list-link" href="#">- Nullam</a>
+                                <a class="footer__layout-navigation-block-list-link" href="#">- Nullam</a>
                             </li>
                             <li>
-                                <a class="footer__layout-navigation-container-list-link" href="#">- Integer eget</a>
-                            </li>
-                        </ul>
-                        <ul class="footer__layout-navigation-container-list">
-                            <li>
-                                <a class="footer__layout-navigation-container-list-link" href="#">- Lorem</a>
-                            </li>
-                            <li>
-                                <a class="footer__layout-navigation-container-list-link" href="#">- Dolor sit</a>
-                            </li>
-                            <li>
-                                <a class="footer__layout-navigation-container-list-link" href="#">- Nullam</a>
-                            </li>
-                            <li>
-                                <a class="footer__layout-navigation-container-list-link" href="#">- Integer eget</a>
+                                <a class="footer__layout-navigation-block-list-link" href="#">- Integer eget</a>
                             </li>
                         </ul>
-                    <div class="footer__layout-social">
+                    </div>
+                    <div class="footer__layout-navigation-block">
+                        <h4 class="footer__layout-navigation-block-title">
+                            <a class="footer__layout-navigation-block-title-link" href="#">Support</a>
+                        </h4>
+                        <ul class="footer__layout-navigation-block-list">
+                            <li>
+                                <a class="footer__layout-navigation-block-list-link" href="#">- Lorem</a>
+                            </li>
+                            <li>
+                                <a class="footer__layout-navigation-block-list-link" href="#">- Dolor sit</a>
+                            </li>
+                            <li>
+                                <a class="footer__layout-navigation-block-list-link" href="#">- Nullam</a>
+                            </li>
+                            <li>
+                                <a class="footer__layout-navigation-block-list-link" href="#">- Integer eget</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__layout-navigation-block">
+                        <h4 class="footer__layout-navigation-block-title">
+                            <a class="footer__layout-navigation-block-title-link" href="#">Contact</a>
+                        </h4>
+                        <ul class="footer__layout-navigation-block-list">
+                            <li>
+                                <a class="footer__layout-navigation-block-list-link" href="#">- Lorem</a>
+                            </li>
+                            <li>
+                                <a class="footer__layout-navigation-block-list-link" href="#">- Dolor sit</a>
+                            </li>
+                            <li>
+                                <a class="footer__layout-navigation-block-list-link" href="#">- Nullam</a>
+                            </li>
+                            <li>
+                                <a class="footer__layout-navigation-block-list-link" href="#">- Integer eget</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__layout-social">
+                    <a class="footer__layout-social-link" href="#">
+                        <img class="footer__layout-social-link-image" src="./assets/images/Facebook.png" alt="FB" />
+                    </a>
+                    <a class="footer__layout-social-link" href="#">
+                        <img class="footer__layout-social-link-image" src="./assets/images/Twitter.png" alt="Twit" />
+                    </a>
+                    <a class="footer__layout-social-link" href="#">
+                        <img class="footer__layout-social-link-image" src="./assets/images/Linkedin.png" alt="In"/>
+                    </a>
+                    <a class="footer__layout-social-link" href="#">
+                        <img class="footer__layout-social-link-image" src="./assets/images/Behance.png" alt="Be" />
+                    </a>
+                    <a class="footer__layout-social-link" href="#">
+                        <img class="footer__layout-social-link-image" src="./assets/images/Dribbble.png" alt="Dribl" />
+                    </a>
                 </div>
             </div>
         </div>
     </footer>
+    <script type="text/javascript" src="./assets/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="./assets/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./assets/slick-1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.sixth-screen__layout-slider-window').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                dots: true
+            });
+        });
+    </script>
 </body>
 </html>
